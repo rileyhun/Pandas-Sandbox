@@ -1,0 +1,23 @@
+# IPython log file
+
+get_ipython().magic('run ipython_bug.py')
+get_ipython().magic('run pydata-book-master/ch03/ipython_bug.py')
+get_ipython().magic('run pydata-book-master/ch03/ipython_bug.py')
+get_ipython().magic('run pydata-book-master/ch03/ipython_bug.py')
+2**27
+_
+foo = 'bar'
+foo
+_i7
+__i7
+_7
+_
+_i7
+_7
+exec _i7
+exec(_i7)
+get_ipython().magic('hist')
+get_ipython().magic('reset')
+get_ipython().magic('xdel')
+get_ipython().magic('logstart')
+get_ipython().system('python')

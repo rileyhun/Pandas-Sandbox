@@ -1,0 +1,235 @@
+# IPython log file
+
+import numpy as np
+arr = np.random.randn(8)
+arr
+arr.sort()
+arr
+arr = randn(5, 3)
+arr = np.random.randn(5, 3)
+arr
+arr.sort(1)
+arr
+arr
+arr.sort(1)
+arr
+arr = np.random.randn(5, 3)
+arr
+arr.sort(1)
+arr
+large_arr = randn(1000)
+large_arr = np.random.randn(1000)
+large_arr.sort()
+large_arr
+large_arr[int(0.05*len(large_arr))]
+names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])
+np.unique(names)
+ints = np.array([3,4,4,3,5,9,3,1,2,1,2,3])
+np.unique(ints)
+get_ipython().magic('timeit np.unique(ints)')
+sorted(set(names))
+get_ipython().magic('timeit sorted(set(names))')
+values = np.array([6, 0, 0, 3, 2, 4, 6])
+np.in1d(values, [2,3,6])
+arr = np.arange(10)
+np.save('some_array', arr)
+np.load('some_array.npy')
+np.savez('array_archive.npz', a=arr, b=arr)
+arch = np.load('array_archive.npz')
+arch['b']
+arch['a']
+get_ipython().system('cat array_ex.txt')
+type array_ex.txt
+type pydata-book-master/ch03/array_ex.txt
+type "pydata-book-master/ch03/array_ex.txt"
+arr = np.loadtxt("pydata-book-master/ch03/array_ex.txt", delimiter=',')
+arr
+x = np.array([[1., 2., 3.], [4., 5., 6.]])
+y = np.array([[6., 23.], [-1, 7], [8, 9]])
+x
+y
+x.dot(y)
+np.ones(3)
+np.dot(x, np.ones(3))
+from numpy.linalg import inv, qr
+X = np.random.randn(5,5)
+mat = X.T.dot(X)
+inv(mat)
+mat.dot(inv(mat))
+q, r = qr(mat)
+q
+r
+samples = np.random.normal(size=(4,4))
+samples
+from random import normalvariate
+N = 1000000
+get_ipython().magic('timeit samples = [normalvariate(0, 1) for _ in xrange(N)]')
+get_ipython().magic('timeit samples = [normalvariate(0, 1) for _ in range(N)]')
+get_ipython().magic('timeit np.random.normal(size=N)')
+import random
+position = 0
+walk = [position]
+steps = 1000
+for i in range(steps)
+import random
+position = 0
+walk = [position]
+steps = 1000
+for i in range(steps):
+    step = 1 if random.randint(0,1) else -1
+    position += step
+    walk.append(position)
+walk
+plot(walk)
+get_ipython().magic('matplotlib inline')
+plt.plot(walk)
+plt.show()
+get_ipython().magic('matplotlib inline')
+import matplotlib.pyplot as plt
+plt.plot(walk)
+plt.show()
+import random
+position = 0
+walk = [position]
+steps = 1000
+for i in range(steps):
+    step = 1 if random.randint(0,1) else -1
+    position += step
+    walk.append(position)
+get_ipython().magic('matplotlib inline')
+import matplotlib.pyplot as plt
+plt.plot(walk)
+plt.show()
+import random
+position = 0
+walk = [position]
+steps = 1000
+for i in range(steps):
+    step = 1 if random.randint(0,1) else -1
+    position += step
+    walk.append(position)
+get_ipython().magic('matplotlib inline')
+import matplotlib.pyplot as plt
+plt.plot(walk)
+plt.show()
+import random
+position = 0
+walk = [position]
+steps = 1000
+for i in range(steps):
+    step = 1 if random.randint(0,1) else -1
+    position += step
+    walk.append(position)
+get_ipython().magic('matplotlib inline')
+import matplotlib.pyplot as plt
+plt.plot(walk)
+plt.show()
+import random
+position = 0
+walk = [position]
+steps = 1000
+for i in range(steps):
+    step = 1 if random.randint(0,1) else -1
+    position += step
+    walk.append(position)
+get_ipython().magic('matplotlib inline')
+import matplotlib.pyplot as plt
+plt.plot(walk)
+plt.show()
+nsteps = 1000
+nsteps = 1000
+draws = np.random.randint(0, 2, size=nsteps)
+draws 
+nsteps = 1000
+draws = np.random.randint(0, 1, size=nsteps)
+draws 
+nsteps = 1000
+draws = np.random.randint(0, 2, size=nsteps)
+draws 
+nsteps = 1000
+draws = np.random.randint(0, 3, size=nsteps)
+draws 
+nsteps = 1000
+draws = np.random.randint(0, 2, size=nsteps)
+draws 
+nsteps = 1000
+draws = np.random.randint(0, 2, size=nsteps)
+steps = np.where(draws > 0, 1, -1)
+walk = steps.cumsum()
+nsteps = 1000
+draws = np.random.randint(0, 2, size=nsteps)
+steps = np.where(draws > 0, 1, -1)
+steps
+nsteps = 1000
+draws = np.random.randint(0, 2, size=nsteps)
+steps = np.where(draws > 0, 1, -1)
+walk = steps.cumsum()
+walk.min()
+np.min(walk)
+np.abs(walk) > = 10
+np.abs(walk) >= 10
+(np.abs(walk) >= 10).argmax()
+npwalks = 5000
+nsteps = 1000
+draws = np.random.randint(0, 2, size=(nwalks, nsteps))
+nwalks = 5000
+nsteps = 1000
+draws = np.random.randint(0, 2, size=(nwalks, nsteps))
+steps = np.where(draws > 0, 1, -1)
+walks = steps.cumsum(1)
+nwalks = 5000
+nsteps = 1000
+draws = np.random.randint(0, 2, size=(nwalks, nsteps))
+steps = np.where(draws > 0, 1, -1)
+walks = steps.cumsum(1)
+plt.plot(walks)
+plt.show()
+nwalks = 5000
+nsteps = 1000
+draws = np.random.randint(0, 2, size=(nwalks, nsteps))
+steps = np.where(draws > 0, 1, -1)
+walks = steps.cumsum(1)
+walks.max()
+plt.plot(walks)
+plt.show()
+walks.min()
+walks.min()
+walks.min()
+hits30 = (np.abs(walks) >= 30).any(1)
+hits30
+hits30.sum()
+crossing_times = (np.abs(walks[hits30]) >= 30).argmax(1)
+crossing_times.mean()
+obj = Series([4, 6, -5, 3])
+import pandas as pd
+obj = Series([4, 6, -5, 3])
+import pandas as pd
+obj = pd.Series([4, 6, -5, 3])
+obj
+import pandas as pd
+from pandas import Series, DataFrame
+obj = Series([4, 6, -5, 3])
+objc
+obj
+obj.values
+obj.index
+obj2 = Series([4, 7, -5, 3], index=['d', 'b', 'a', 'c'])
+obj2
+obj2['a']
+obj2[2]
+obj2['a'] = 6
+obj2[['c', 'a', 'd']]
+obj2
+obj2[obj2 > 0]
+obj2[obj2 > 3]
+obj2*2
+np.exp(obj2)
+'b' in obj2
+sdata = {'Ohio': 35000, 'Texas': 71000, 'Oregon': 16000, 'Utah': 5000}
+obj3 = Series(sdata)
+obj3
+states = ['California', 'Ohio', 'Oregon', 'Texas']
+obj4 = Series(sdata, index=states)
+obj4
+obj3 + obj4
+get_ipython().magic('logstart ()')
